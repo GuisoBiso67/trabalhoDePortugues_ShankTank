@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+/* font-family: 'Aboreto', cursive; 
+   Para Títulos */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Dosis', sans-serif; 
+   Para Textos */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Anek Telugu', sans-serif; 
+   Para Links */
+
+:root{
+    --cor01: white;
+    --cor02: black;
+    --cor03: #1f003a;
+    --cor04: #9828FA;
+    --cor05: #7800E0;
+    --cor06: #3D1361;
+    --cor07: #5C00AD;
+
+    --fonteTitulo: 'Aboreto', cursive;
+    --fontePadrao: 'Dosis', sans-serif;
+    --fonteLinks: 'Anek Telugu', sans-serif;
+}
+
+*{
+   margin: 0px;
+}
+
+body{
+   background-image: linear-gradient(to bottom, var(--cor06), var(--cor03));
+}
+
+/*----------------------- HEADER -----------------------*/
+
+h1{
+   color: var(--cor01);
+   font-family: 'Aboreto', cursive;
+}
+
+h2{
+   color: var(--cor01);
+   font-family: 'Dosis', sans-serif;
+}
+
+/*----------------------- HEADER -----------------------*/
+
+/*------------------------ MAIN ------------------------*/
+
+/*----- Auto Ajuda e Neurociência -----*/
+
+div#autoAjuda_e_Neurociencia{
+   background-color: var(--cor02);
+   display: block;
+   margin: 10px auto;
+   height: 323px;
+   width: 1250px;
+   border-radius: 4px;
+   box-shadow: 0px 0px 3px 0px var(--cor);
+}
+
+a.sessaoLivrosAutoAjuda_e_Neurociencia{
+   display: inline-block;
+   color: var(--cor01);
+   text-align: center;
+   text-decoration: none;
+   font-size: 23px;
+   font-weight: 600;
+   margin: 10px;
+   height: 300px;
+   width: 220px;
+   border: 1px solid var(--cor02);
+   font-family: var(--fontePadrao);
+}
+
+a.sessaoLivrosAutoAjuda_e_Neurociencia > img{
+   height: 300px;
+   width: 220px;
+   border-radius: 5px;
+}
+
+a.sessaoLivrosAutoAjuda_e_Neurociencia:hover{
+   border: 1px solid var(--cor01);
+   border-radius: 5px;
+   color: var(--cor01);
+}
+
+a.sessaoLivrosAutoAjuda_e_Neurociencia:active{
+   color: var(--cor02);
+}
+
+/*----- Terror -----*/
+
+div#terror{
+   background-color: var(--cor02);
+   display: block;
+   margin: 10px auto;
+   height: 323px;
+   width: 1250px;
+   border-radius: 4px;
+   box-shadow: 0px 0px 3px 0px var(--cor);
+}
+
+a.sessaoLivrosTerror{
+   display: inline-block;
+   color: var(--cor01);
+   text-align: center;
+   text-decoration: none;
+   font-size: 23px;
+   font-weight: 600;
+   margin: 10px;
+   height: 300px;
+   width: 220px;
+   border: 1px solid var(--cor02);
+   font-family: var(--fontePadrao);
+}
+
+a.sessaoLivrosTerror > img{
+   height: 300px;
+   width: 220px;
+   border-radius: 5px;
+}
+
+a.sessaoLivrosTerror:hover{
+   border: 1px solid var(--cor01);
+   border-radius: 5px;
+   color: var(--cor01);
+}
+
+a.sessaoLivrosTerror:active{
+   color: var(--cor02);
+}
+
+/*----- Ficção -----*/
+
+div#ficcao{
+   background-color: var(--cor02);
+   display: block;
+   margin: 10px auto;
+   height: 323px;
+   width: 1250px;
+   border-radius: 4px;
+   box-shadow: 0px 0px 3px 0px var(--cor);
+}
+
+a.sessaoLivrosFiccao{
+   display: inline-block;
+   color: var(--cor01);
+   text-align: center;
+   text-decoration: none;
+   font-size: 23px;
+   font-weight: 600;
+   margin: 10px;
+   height: 300px;
+   width: 220px;
+   border: 1px solid var(--cor02);
+   font-family: var(--fontePadrao);
+}
+
+a.sessaoLivrosFiccao > img{
+   height: 300px;
+   width: 220px;
+   border-radius: 5px;
+}
+
+a.sessaoLivrosFiccao:hover{
+   border: 1px solid var(--cor01);
+   border-radius: 5px;
+   color: var(--cor01);
+}
+
+a.sessaoLivrosFiccao:active{
+   color: var(--cor02);
+}
+
+/*------------------------ MAIN ------------------------*/
+
+/*------------------------ FOOTER ------------------------*/
+
+a#linkCreator{
+   color: var(--cor01);
+   text-decoration: none;
+   font-family: var(--fonteLinks);
+   font-weight: bold;
+}
+
+a#linkCreator:hover{
+   text-decoration: overline;
+   color: var(--cor02);
+}
+
+a#linkCreator:active{
+   color: var(--cor01);
+}
+
+p#creatorFooter{
+   color: var(--cor01);
+   padding-bottom: 15px;
+   width: 260px;
+   margin-left: 10px;
+   margin-right: 20px;
+   font-family: var(--fonteLinks);
+}
+
+footer > p{
+   color: var(--cor01);
+}
+
+/*------------------------ FOOTER ------------------------*/
