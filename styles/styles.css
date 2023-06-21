@@ -18,6 +18,7 @@
     --cor05: #7800E0;
     --cor06: #3D1361;
     --cor07: #5C00AD;
+    --cor08: #ff0000;
 
     --fonteTitulo: 'Aboreto', cursive;
     --fontePadrao: 'Dosis', sans-serif;
@@ -48,15 +49,34 @@ h2{
 
 /*------------------------ MAIN ------------------------*/
 
+div.centralizar{
+   background-color: var(--cor02);
+   display: block;
+   margin: 0px auto;
+   height: 380px;
+   width: 1240px;
+   border-radius: 20px;
+   box-shadow: 0px 0px 3px 0px var(--cor);
+}
+
+h2{
+   background-color: var(--cor04);
+   text-align: center;
+   width: 200px;
+   margin: 50px auto 20px auto;
+   border-radius: 30%;
+   border: 5px solid var(--cor02);
+}
+
 /*----- Auto Ajuda e Neurociência -----*/
 
 div#autoAjuda_e_Neurociencia{
    background-color: var(--cor02);
    display: block;
    margin: 10px auto;
-   height: 323px;
-   width: 1250px;
-   border-radius: 4px;
+   height: 380px;
+   width: 1300px;
+   border-radius: 20px;
    box-shadow: 0px 0px 3px 0px var(--cor);
 }
 
@@ -81,13 +101,14 @@ a.sessaoLivrosAutoAjuda_e_Neurociencia > img{
 }
 
 a.sessaoLivrosAutoAjuda_e_Neurociencia:hover{
+   text-decoration: underline;
    border: 1px solid var(--cor01);
    border-radius: 5px;
    color: var(--cor01);
 }
 
 a.sessaoLivrosAutoAjuda_e_Neurociencia:active{
-   color: var(--cor02);
+   color: var(--cor04);
 }
 
 /*----- Terror -----*/
@@ -96,10 +117,10 @@ div#terror{
    background-color: var(--cor02);
    display: block;
    margin: 10px auto;
-   height: 323px;
-   width: 1250px;
-   border-radius: 4px;
-   box-shadow: 0px 0px 3px 0px var(--cor);
+   height: 380px;
+   width: 1300px;
+   border-radius: 20px;
+   box-shadow: 0px 0px 3px 0px var(--cor02);
 }
 
 a.sessaoLivrosTerror{
@@ -123,13 +144,14 @@ a.sessaoLivrosTerror > img{
 }
 
 a.sessaoLivrosTerror:hover{
+   text-decoration: underline;
    border: 1px solid var(--cor01);
    border-radius: 5px;
    color: var(--cor01);
 }
 
 a.sessaoLivrosTerror:active{
-   color: var(--cor02);
+   color: var(--cor04);
 }
 
 /*----- Ficção -----*/
@@ -138,9 +160,9 @@ div#ficcao{
    background-color: var(--cor02);
    display: block;
    margin: 10px auto;
-   height: 323px;
-   width: 1250px;
-   border-radius: 4px;
+   height: 380px;
+   width: 1300px;
+   border-radius: 20px;
    box-shadow: 0px 0px 3px 0px var(--cor);
 }
 
@@ -165,13 +187,14 @@ a.sessaoLivrosFiccao > img{
 }
 
 a.sessaoLivrosFiccao:hover{
+   text-decoration: underline;
    border: 1px solid var(--cor01);
    border-radius: 5px;
    color: var(--cor01);
 }
 
 a.sessaoLivrosFiccao:active{
-   color: var(--cor02);
+   color: var(--cor04);
 }
 
 /*------------------------ MAIN ------------------------*/
@@ -187,7 +210,7 @@ a#linkCreator{
 
 a#linkCreator:hover{
    text-decoration: overline;
-   color: var(--cor02);
+   color: var(--cor04);
 }
 
 a#linkCreator:active{
@@ -196,15 +219,15 @@ a#linkCreator:active{
 
 p#creatorFooter{
    color: var(--cor01);
-   padding-bottom: 15px;
-   width: 260px;
-   margin-left: 10px;
-   margin-right: 20px;
+   padding: 15px 0px 0px 0px;
+   width: 286px;
+   margin: 10px auto;
    font-family: var(--fonteLinks);
 }
 
 footer > p{
    color: var(--cor01);
+   font-size: 18px;
 }
 
 /*------------------------ FOOTER ------------------------*/
