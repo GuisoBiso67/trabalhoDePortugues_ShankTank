@@ -13,6 +13,18 @@
 :root{
     --cor01: white;
     --cor02: black;
+    --cor03: #507681;
+    --cor04: #CA6077;
+    --cor05: #CCCDD0;
+    --cor06: #633010;
+    --cor07: #D58389;
+
+    --cor08: #ff0000;
+    --cor09: #240d38;
+
+    --cor10: #681729;
+
+    /*
     --cor03: #1f003a;
     --cor04: #9828FA;
     --cor05: #7800E0;
@@ -20,6 +32,7 @@
     --cor07: #5C00AD;
     --cor08: #ff0000;
     --cor09: #240d38;
+    */
 
     --fonteTitulo: 'Aboreto', cursive;
     --fontePadrao: 'Dosis', sans-serif;
@@ -31,15 +44,15 @@
 }
 
 body{
-   background-image: linear-gradient(to bottom, var(--cor06), var(--cor03));
+   background-image: linear-gradient(to bottom, var(--cor07), var(--cor04));
 }
 
 /*----------------------- HEADER -----------------------*/
 
 header{
-   background-color: var(--cor09);
-   height: 250px;
-   color: black;
+   background-color: var(--cor04);
+   height: 400px;
+   color: var(--cor02);
 }
 
 h1{
@@ -47,11 +60,19 @@ h1{
    font-family: 'Aboreto', cursive;
    text-align: center;
    font-size: 72px;
+   height: 200px;
 }
 
 h2{
    color: var(--cor01);
    font-family: 'Dosis', sans-serif;
+}
+
+header > h1 > img {
+   width: 200px;
+   height: 200px;
+   margin: 10px 20px 0px 10px;
+   vertical-align: -70px;
 }
 
 nav#navHeader{
@@ -64,17 +85,17 @@ nav#navHeader{
 
 nav#navHeader > a{
    padding: 5px 10px 0px 10px;
-   background-color: var(--cor04);
+   background-color: var(--cor09);
    margin: 0px 10px;
    color: var(--cor01);
    text-decoration: none;
-   border-radius: 5px;
+   border-radius: 10px;
    font-size: 22px;
    font-family: var(--fonteLinks);
 }
 
 nav#navHeader > a:hover{
-   background-color: var(--cor08);
+   background-color: var(--cor10);
 }
 
 /*----------------------- HEADER -----------------------*/
@@ -82,11 +103,11 @@ nav#navHeader > a:hover{
 /*------------------------ MAIN ------------------------*/
 
 main{
-   background-image: linear-gradient(to bottom, var(--cor09), var(--cor06), var(--cor03));
+   background-image: linear-gradient(to bottom, var(--cor04), var(--cor07), var(--cor04));
 }
 
 div.centralizar{
-   background-color: var(--cor02);
+   background-color: var(--cor09);
    display: block;
    margin: 0px auto;
    height: 380px;
@@ -96,7 +117,7 @@ div.centralizar{
 }
 
 h2#tituloLivros1{
-   background-color: var(--cor04);
+   background-color: var(--cor10);
    text-align: center;
    width: 200px;
    margin: 0px auto 20px auto;
@@ -105,7 +126,7 @@ h2#tituloLivros1{
 }
 
 h2#tituloLivros2, h2#tituloLivros3{
-   background-color: var(--cor04);
+   background-color: var(--cor10);
    text-align: center;
    width: 200px;
    margin: 50px auto 20px auto;
@@ -131,13 +152,14 @@ a.seta_direita > img{
 /*----- Auto Ajuda e Neurociência -----*/
 
 div#autoAjuda_e_Neurociencia{
-   background-color: var(--cor02);
+   background-color: var(--cor09);
    display: block;
    margin: 10px auto;
    height: 380px;
    width: 1500px;
    border-radius: 20px;
-   box-shadow: 0px 0px 3px 0px var(--cor);
+   box-shadow: 0px 0px 3px 0px var(--cor02);
+   border: 3px solid var(--cor02);
 }
 
 a.sessaoLivrosAutoAjuda_e_Neurociencia{
@@ -174,13 +196,14 @@ a.sessaoLivrosAutoAjuda_e_Neurociencia:active{
 /*----- Terror -----*/
 
 div#terror{
-   background-color: var(--cor02);
+   background-color: var(--cor09);
    display: block;
    margin: 10px auto;
    height: 380px;
    width: 1500px;
    border-radius: 20px;
    box-shadow: 0px 0px 3px 0px var(--cor02);
+   border: 3px solid var(--cor02);
 }
 
 a.sessaoLivrosTerror{
@@ -217,13 +240,14 @@ a.sessaoLivrosTerror:active{
 /*----- Ficção -----*/
 
 div#ficcao{
-   background-color: var(--cor02);
+   background-color: var(--cor09);
    display: block;
    margin: 10px auto;
    height: 380px;
    width: 1500px;
    border-radius: 20px;
-   box-shadow: 0px 0px 3px 0px var(--cor);
+   box-shadow: 0px 0px 3px 0px var(--cor02);
+   border: 3px solid var(--cor02);
 }
 
 a.sessaoLivrosFiccao{
@@ -262,7 +286,7 @@ a.sessaoLivrosFiccao:active{
 /*------------------------ FOOTER ------------------------*/
 
 footer{
-   background-color: var(--cor03);
+   background-color: var(--cor04);
 }
 
 a#linkCreator{
@@ -274,7 +298,7 @@ a#linkCreator{
 
 a#linkCreator:hover{
    text-decoration: overline;
-   color: var(--cor04);
+   color: var(--cor10);
 }
 
 a#linkCreator:active{
