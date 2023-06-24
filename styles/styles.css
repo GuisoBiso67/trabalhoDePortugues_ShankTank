@@ -19,6 +19,7 @@
     --cor06: #3D1361;
     --cor07: #5C00AD;
     --cor08: #ff0000;
+    --cor09: #240d38;
 
     --fonteTitulo: 'Aboreto', cursive;
     --fontePadrao: 'Dosis', sans-serif;
@@ -35,9 +36,17 @@ body{
 
 /*----------------------- HEADER -----------------------*/
 
+header{
+   background-color: var(--cor09);
+   height: 250px;
+   color: black;
+}
+
 h1{
    color: var(--cor01);
    font-family: 'Aboreto', cursive;
+   text-align: center;
+   font-size: 72px;
 }
 
 h2{
@@ -45,27 +54,78 @@ h2{
    font-family: 'Dosis', sans-serif;
 }
 
+nav#navHeader{
+   padding-top: 30px;
+   text-align: left;
+   margin-left: auto;
+   width: 1020px;
+   height: 70px;
+}
+
+nav#navHeader > a{
+   padding: 5px 10px 0px 10px;
+   background-color: var(--cor04);
+   margin: 0px 10px;
+   color: var(--cor01);
+   text-decoration: none;
+   border-radius: 5px;
+   font-size: 22px;
+   font-family: var(--fonteLinks);
+}
+
+nav#navHeader > a:hover{
+   background-color: var(--cor08);
+}
+
 /*----------------------- HEADER -----------------------*/
 
 /*------------------------ MAIN ------------------------*/
+
+main{
+   background-image: linear-gradient(to bottom, var(--cor09), var(--cor06), var(--cor03));
+}
 
 div.centralizar{
    background-color: var(--cor02);
    display: block;
    margin: 0px auto;
    height: 380px;
-   width: 1240px;
+   width: 1450px;
    border-radius: 20px;
    box-shadow: 0px 0px 3px 0px var(--cor);
 }
 
-h2{
+h2#tituloLivros1{
+   background-color: var(--cor04);
+   text-align: center;
+   width: 200px;
+   margin: 0px auto 20px auto;
+   border-radius: 30%;
+   border: 5px solid var(--cor02);
+}
+
+h2#tituloLivros2, h2#tituloLivros3{
    background-color: var(--cor04);
    text-align: center;
    width: 200px;
    margin: 50px auto 20px auto;
    border-radius: 30%;
    border: 5px solid var(--cor02);
+}
+
+a.seta_esquerda > img{
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+   margin-left: 30px;
+   vertical-align: 140px;
+}
+
+a.seta_direita > img{
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+   vertical-align: 140px;
 }
 
 /*----- Auto Ajuda e Neurociência -----*/
@@ -75,7 +135,7 @@ div#autoAjuda_e_Neurociencia{
    display: block;
    margin: 10px auto;
    height: 380px;
-   width: 1300px;
+   width: 1500px;
    border-radius: 20px;
    box-shadow: 0px 0px 3px 0px var(--cor);
 }
@@ -118,7 +178,7 @@ div#terror{
    display: block;
    margin: 10px auto;
    height: 380px;
-   width: 1300px;
+   width: 1500px;
    border-radius: 20px;
    box-shadow: 0px 0px 3px 0px var(--cor02);
 }
@@ -161,7 +221,7 @@ div#ficcao{
    display: block;
    margin: 10px auto;
    height: 380px;
-   width: 1300px;
+   width: 1500px;
    border-radius: 20px;
    box-shadow: 0px 0px 3px 0px var(--cor);
 }
@@ -201,6 +261,10 @@ a.sessaoLivrosFiccao:active{
 
 /*------------------------ FOOTER ------------------------*/
 
+footer{
+   background-color: var(--cor03);
+}
+
 a#linkCreator{
    color: var(--cor01);
    text-decoration: none;
@@ -220,7 +284,7 @@ a#linkCreator:active{
 p#creatorFooter{
    color: var(--cor01);
    padding: 15px 0px 0px 0px;
-   width: 286px;
+   width: 300px;
    margin: 10px auto;
    font-family: var(--fonteLinks);
 }
