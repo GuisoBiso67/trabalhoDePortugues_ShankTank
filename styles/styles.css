@@ -23,6 +23,7 @@
     --cor09: #240d38;
 
     --cor10: #681729;
+    --cor11: #b45368;
 
     /*
     --cor03: #1f003a;
@@ -68,7 +69,7 @@ h2{
    font-family: 'Dosis', sans-serif;
 }
 
-header > h1 > img {
+header > h1 > abbr > a > img {
    width: 200px;
    height: 200px;
    margin: 10px 20px 0px 10px;
@@ -96,6 +97,26 @@ nav#navHeader > a{
 
 nav#navHeader > a:hover{
    background-color: var(--cor10);
+}
+
+div#secret{
+   width: 30px;
+   margin: 0px auto;
+   font-size: 8px;
+   color: var(--cor11);
+}
+
+div#secret > p{
+   display: none;
+}
+
+div#secret:hover > p#p_secret{
+   display: block;
+   color: white;
+   background-color: red;
+   width: 85px;
+   height: 25px;
+   font-size: 20px;
 }
 
 /*----------------------- HEADER -----------------------*/
